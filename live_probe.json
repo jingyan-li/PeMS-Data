@@ -1,0 +1,134 @@
+{
+  "title": "Caltrans PeMS",
+  "has_incorrect_login": false,
+  "district_id": {
+    "count": 1,
+    "options": [
+      {
+        "value": "all",
+        "label": "All Districts",
+        "selected": true
+      }
+    ]
+  },
+  "type": {
+    "count": 1,
+    "options": [
+      {
+        "value": "station_5min",
+        "label": "Station 5-Minute",
+        "selected": false
+      },
+      {
+        "value": "station_hour",
+        "label": "Station Hour",
+        "selected": false
+      },
+      {
+        "value": "station_day",
+        "label": "Station Day",
+        "selected": false
+      },
+      {
+        "value": "station_aadt",
+        "label": "Station AADT",
+        "selected": false
+      },
+      {
+        "value": "station_raw",
+        "label": "Station Raw",
+        "selected": false
+      },
+      {
+        "value": "meta",
+        "label": "Station Metadata",
+        "selected": false
+      },
+      {
+        "value": "gn_link_5min",
+        "label": "Link 5-Minute",
+        "selected": false
+      },
+      {
+        "value": "tmg_trucks_hour",
+        "label": "Census Trucks Hour",
+        "selected": false
+      },
+      {
+        "value": "tmg_trucks_day",
+        "label": "Census Trucks Day",
+        "selected": false
+      },
+      {
+        "value": "tmg_vclass_hour",
+        "label": "Census V-Class Hour",
+        "selected": false
+      },
+      {
+        "value": "tmg_vclass_day",
+        "label": "Census V-Class Day",
+        "selected": false
+      },
+      {
+        "value": "tmg_volume_day",
+        "label": "Census Volume Day",
+        "selected": false
+      },
+      {
+        "value": "tmg_station_configs",
+        "label": "Census Station Configurations",
+        "selected": false
+      },
+      {
+        "value": "chp_incidents_day",
+        "label": "CHP Incidents Day",
+        "selected": false
+      },
+      {
+        "value": "chp_incidents_month",
+        "label": "CHP Incidents Month",
+        "selected": false
+      },
+      {
+        "value": "fastrak_5min",
+        "label": "FasTrak 5-Minute",
+        "selected": true
+      },
+      {
+        "value": "fastrak_hour",
+        "label": "FasTrak Hour",
+        "selected": false
+      },
+      {
+        "value": "fastrak_day",
+        "label": "FasTrak Day",
+        "selected": false
+      },
+      {
+        "value": "fastrak_locations",
+        "label": "FasTrak Locations",
+        "selected": false
+      },
+      {
+        "value": "reid_5min",
+        "label": "Re-ID 5-Minute",
+        "selected": false
+      },
+      {
+        "value": "reid_hour",
+        "label": "Re-ID Hour",
+        "selected": false
+      },
+      {
+        "value": "reid_locations",
+        "label": "Re-ID Locations",
+        "selected": false
+      },
+      {
+        "value": "reid_raw",
+        "label": "Re-ID Raw",
+        "selected": false
+      }
+    ]
+  }
+}

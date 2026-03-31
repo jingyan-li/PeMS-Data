@@ -1,0 +1,25 @@
+{
+  "job_name": "district_7_historical",
+  "site_profile": "./config/site_profile.json",
+  "storage_state_path": "./state/pems_storage_state.json",
+  "output_root": "./downloads",
+  "timeout_ms": 120000,
+  "headed_auth": true,
+  "headed_downloads": false,
+  "slow_mo_ms": 0,
+  "overwrite_existing": false,
+  "requests": [
+    {
+      "name": "district7_station5min",
+      "district": 7,
+      "data_type": "Station 5-Minute",
+      "start_date": "2024-12-01",
+      "end_date": "2025-05-31",
+      "chunk_days": 1,
+      "output_subdir": "d07_station5min",
+      "filename_template": "d07_text_station_5min_{start_ymd}.txt.gz",
+      "download_strategy": "listing",
+      "form_values": {}
+    }
+  ]
+}

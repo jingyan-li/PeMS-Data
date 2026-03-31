@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Data files
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.gz
+*.txt
+
+# Storage state
+.venv/
+venv/
+env/
+state/
+_state/
+*.db
+*.sqlite
+*.log

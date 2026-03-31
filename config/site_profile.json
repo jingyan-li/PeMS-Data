@@ -1,0 +1,23 @@
+{
+  "name": "pems-default",
+  "login_url": "https://pems.dot.ca.gov/",
+  "clearinghouse_url": "https://pems.dot.ca.gov/?dnode=Clearinghouse",
+  "login": {
+    "username": "input[name='username']",
+    "password": "input[name='password']",
+    "submit": "input[type='submit'], button[type='submit']",
+    "success_indicator": "text=Welcome to PeMS"
+  },
+  "field_selectors": {
+    "district": "select[name='district_id']",
+    "data_type": "select[name='type']",
+    "start_date": "input[name='s_time_id']",
+    "end_date": "input[name='e_time_id']"
+  },
+  "download": {
+    "submit": "input[type='submit'][value='Submit'], button:has-text('Submit')",
+    "post_submit_download": null,
+    "completion_indicator": null
+  },
+  "static_form_values": {}
+}

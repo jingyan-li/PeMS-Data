@@ -1,0 +1,25 @@
+{
+  "job_name": "district_7_metadata",
+  "site_profile": "./config/site_profile.json",
+  "storage_state_path": "./state/pems_storage_state.json",
+  "output_root": "./downloads",
+  "timeout_ms": 120000,
+  "headed_auth": true,
+  "headed_downloads": false,
+  "slow_mo_ms": 0,
+  "overwrite_existing": false,
+  "requests": [
+    {
+      "name": "district7_metadata_largest",
+      "district": 7,
+      "data_type": "Station Metadata",
+      "start_date": "2023-01-01",
+      "end_date": "2023-12-31",
+      "chunk_days": 365,
+      "output_subdir": "d07_metadata",
+      "filename_template": "metadata_placeholder.txt",
+      "download_strategy": "listing",
+      "form_values": {}
+    }
+  ]
+}

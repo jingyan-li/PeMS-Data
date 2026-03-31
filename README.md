@@ -75,7 +75,8 @@ This prints the expanded list of historical download chunks and target output pa
 ### 4. Run the historical downloader
 
 ```bash
-python run_historical_download.py run --job job.example.json
+python run_historical_download.py run --job job.example.json 
+python run_historical_download.py run --job job.metadata.json
 ```
 
 For a smaller first test:

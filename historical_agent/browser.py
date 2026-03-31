@@ -150,6 +150,10 @@ class PeMSBrowserAgent:
                 await page.fill(selector, str(value))
 
     async def _submit_and_save(self, page: Any, target_path: Path) -> Path:
+        if target_path.exists() and not self.job.overwrite_existing:
+            print(f"File already exists, skipping download: {target_path}")
+            return target_path
+
         submit = self.site.download.submit
         if self.site.download.post_submit_download:
             await page.click(submit)
@@ -220,6 +224,11 @@ class PeMSBrowserAgent:
                 save_path = (
                     chunk.target_path if len(expected_names) == 1 else chunk.target_path.parent / link["text"]
                 )
+                if save_path.exists() and not self.job.overwrite_existing:
+                    print(f"File already exists, skipping download: {save_path}")
+                    saved_paths.append(save_path)
+                    continue
+
                 async with page.expect_download(timeout=self.job.timeout_ms) as download_info:
                     await page.locator("a", has_text=link["text"]).first.click()
                 download = await download_info.value
@@ -265,6 +274,10 @@ class PeMSBrowserAgent:
 
         chosen = max(candidates, key=lambda item: (item["size_bytes"], item["file_date"], item["text"]))
         target_path = chunk.target_path.parent / chosen["text"]
+        if target_path.exists() and not self.job.overwrite_existing:
+            print(f"File already exists, skipping download: {target_path}")
+            return target_path
+
         async with page.expect_download(timeout=self.job.timeout_ms) as download_info:
             await page.locator("a", has_text=chosen["text"]).first.click()
         download = await download_info.value

@@ -1,0 +1,3 @@
+# Dependencies for the PeMS historical download agent (historical_agent/).
+# After installing, fetch the browser binary with:  playwright install chromium
+playwright
